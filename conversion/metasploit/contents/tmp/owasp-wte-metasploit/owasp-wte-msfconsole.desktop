@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Metasploit console
+Exec=launch-msfconsole
+Icon=owasp-wte-metasploit-icon
+Categories=Scanners;

@@ -1,0 +1,62 @@
+#!/bin/sh
+
+# Register the icons needed for SQLiX and the OWASP menu
+xdg-icon-resource install --size 64 /tmp/owasp-wte-sqlix/owasp-wte-menu-icon.png owasp-wte-menu-icon
+xdg-icon-resource install --size 64 /tmp/owasp-wte-sqlix/owasp-wte-sqlix-icon.png owasp-wte-sqlix-icon 
+
+# Create the necessary menu entries
+xdg-desktop-menu install /tmp/owasp-wte-sqlix/owasp-owasp.directory \
+                         /tmp/owasp-wte-sqlix/owasp-scanners.directory \
+                         /tmp/owasp-wte-sqlix/owasp-wte-sqlix.desktop
+
+# Cleanup /tmp
+rm -rf /tmp/owasp-wte-sqlix
+
+
+###############################
+#   Special Crap for SQLiX    #
+###############################
+
+notify-send "Installing CPAN Modules for SQLiX.  This may take a bit" -t 3000
+
+# Get the necessary CPAN modules for this pacakge
+CONFIGDROP=0
+
+# Check that then necessary directory structure exists in /etc/\
+CONFIGPATH="/etc/perl/CPAN"
+if [ ! -d $CONFIGPATH ]
+then
+  mkdir -p $CONFIGPATH
+fi
+
+# Check for a working CPAN config and drop one in if nothing is present
+CPANCONFIG="/etc/perl/CPAN/Config.pm"
+if [ !e "$CPANCONFIG" ]
+then
+  cp /tmp/owasp-wte-sqlix/Congif.pm /etc/perl/CPAN
+  CONFIGDROP=1
+fi
+
+#kick off PERL shell to install required modules 
+###old code, keeping for posterity
+#sudo perl -MCPAN -e "install Archive::Zip,Algorithm::Diff,Tie::CharArray"
+#sudo perl -MCPAN -e "force install WWW::CheckSite::Spider"
+sudo perl -MCPAN -e "CPAN::Shell->install(Archive::Zip)"
+sudo perl -MCPAN -e "CPAN::Shell->install(Algorithm::Diff)"
+sudo perl -MCPAN -e "CPAN::Shell->install(Tie::CharArray)"
+# New additions for hopefully unattended install
+sudo perl -MCPAN -e "CPAN::Shell->force(qw(install Sub::Uplevel));"
+sudo perl -MCPAN -e "CPAN::Shell->force(qw(install Tree::DAG_Node));"
+sudo perl -MCPAN -e "CPAN::Shell->force(qw(install HTTP::Server::Simple));"
+sudo perl -MCPAN -e "CPAN::Shell->force(qw(install HTTP::Server::Simple::CGI));"
+sudo perl -MCPAN -e "CPAN::Shell->force(qw(install Test::Warn));"
+sudo perl -MCPAN -e "CPAN::Shell->force(qw(install WWW::Mechanize));"
+sudo perl -MCPAN -e "CPAN::Shell->force(qw(install WWW:CheckSite::Spider));"
+
+# Clean up the temporary config we dropped
+if [ $CONFIGDROP -eq 1 ]
+then
+  rm  $CPANCONFIG
+fi
+
+screen -d -m gedit /usr/share/sqlix/install_notes.txt

@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Register the icons needed for Grendel-Scan and the OWASP menu
+xdg-icon-resource install --size 64 /tmp/owasp-wte-grendel-scan/owasp-wte-menu-icon.png owasp-wte-menu-icon
+xdg-icon-resource install --size 64 /tmp/owasp-wte-grendel-scan/owasp-wte-grendel-scan-icon.png owasp-wte-grendel-scan-icon 
+
+# Create the necessary menu entries
+xdg-desktop-menu install /tmp/owasp-wte-grendel-scan/owasp-owasp.directory \
+                         /tmp/owasp-wte-grendel-scan/owasp-scanners.directory \
+                         /tmp/owasp-wte-grendel-scan/owasp-wte-grendel-scan.desktop
+
+# Cleanup /tmp
+rm -rf /tmp/owasp-wte-grendel-scan

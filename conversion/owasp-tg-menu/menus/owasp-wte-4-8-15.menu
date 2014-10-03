@@ -1,0 +1,26 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+"http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+    <Name>OWASP</Name>
+    <Directory>owasp-owasp.directory</Directory>
+    <Include>
+      <Category>OWASP</Category>
+    </Include>
+    <Menu>
+       <Name>4.8.15 Incubated Vulnerability Testing</Name>
+       <Directory>owasp-wte-4-8-15.directory</Directory>
+       <Include>
+         <Category>Incubated Vulnerability Testing</Category>
+       </Include>
+    	<Menu>
+       		<Name>4.8.15 Incubated vulnerability testing (OWASP-DV-015)</Name>
+       		<Directory>owasp-wte-OWASP-DV-015.directory</Directory>
+       		<Include>
+         		<Category>Incubated vulnerability testing</Category>
+       		</Include>
+       	</Menu>
+      </Menu>
+  </Menu>
+</Menu>

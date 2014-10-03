@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="com.paterva.maltego.transforms.standard">
+    <module_version install_time="1278609255519" last="true" origin="installer" specification_version="1.0">
+        <file crc="2629001252" name="config/Modules/com-paterva-maltego-transforms-standard.xml"/>
+        <file crc="155796478" name="modules/com-paterva-maltego-transforms-standard.jar"/>
+    </module_version>
+</module>

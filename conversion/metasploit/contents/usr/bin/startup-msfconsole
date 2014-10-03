@@ -1,0 +1,21 @@
+#/bin/sh
+
+echo " "
+echo " "
+echo "   Metasploit Framework 4.3.0 - An Equil Opportunity Exploiter"
+echo "        msfconsole - Interactive Metasploit Console"
+echo "              (packaged by OWASP WTE)"
+echo " "
+echo "                 ##                          ###           ##    ##"
+echo "  ##  ##  #### ###### ####  #####   #####    ##    ####        ######"
+echo " ####### ##  ##  ##  ##         ## ##  ##    ##   ##  ##   ###   ##"
+echo " ####### ######  ##  #####   ####  ##  ##    ##   ##  ##   ##    ##"
+echo " ## # ##     ##  ##  ##  ## ##      #####    ##   ##  ##   ##    ##"
+echo " ##   ##  #### ###   #####   #####     ##   ####   ####   #### ###"
+echo "                                       ##"
+echo " "
+echo "  Type 'msfconsole --help' to get help "
+echo "     or get started with 'msfconsole"
+echo " "
+
+bash

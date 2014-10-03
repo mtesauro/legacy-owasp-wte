@@ -1,0 +1,43 @@
+#!/bin/bash
+
+### Remove special files since this was installed from a tarball
+rm --recursive --force /opt/owasp/metasploit
+
+# Remove the icon needed for Metasploit
+xdg-icon-resource uninstall --size 64  owasp-wte-metasploit-icon 
+
+# Create the necessary menu entries
+# msfcli
+xdg-desktop-menu uninstall owasp-owasp.directory \
+                           owasp-scanners.directory \
+                           owasp-wte-msfcli.desktop
+# msfconsole
+xdg-desktop-menu uninstall owasp-owasp.directory \
+                           owasp-scanners.directory \
+                           owasp-wte-msfconsole.desktop
+# msfupdate
+xdg-desktop-menu uninstall owasp-owasp.directory \
+                           owasp-scanners.directory \
+                           owasp-wte-msf-update.desktop
+# msfwebstart
+xdg-desktop-menu uninstall owasp-owasp.directory \
+                           owasp-scanners.directory \
+                           owasp-wte-msfweb-start.desktop
+# msfwebstop
+xdg-desktop-menu uninstall owasp-owasp.directory \
+                           owasp-scanners.directory \
+                           owasp-wte-msf-web-stop.desktop
+
+# Set some default values
+OWASP_Menu="/etc/xdg/menus/applications-merged/owasp-*.menu"
+
+# See if any other owasp-wte packages exist on this system
+# and if none remain, remove some cruft
+INSTALLS=`dpkg --list | grep "owasp-wte" | grep ii | wc --lines`
+if [ $INSTALLS = 0 ]
+then
+    # No OWASP WTE packages are left so we can remove the OWASP applications menu
+    rm --force $OWASP_Menu
+    # And we can get rid of the icon used for that menu
+    xdg-icon-resource uninstall --size 64 owasp-wte-menu-icon
+fi

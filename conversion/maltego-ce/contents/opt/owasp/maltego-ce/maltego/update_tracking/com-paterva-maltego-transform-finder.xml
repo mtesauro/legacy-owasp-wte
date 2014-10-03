@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="com.paterva.maltego.transform.finder">
+    <module_version install_time="1278609365473" last="true" origin="installer" specification_version="1.0">
+        <file crc="217834900" name="config/Modules/com-paterva-maltego-transform-finder.xml"/>
+        <file crc="4288588044" name="modules/com-paterva-maltego-transform-finder.jar"/>
+    </module_version>
+</module>

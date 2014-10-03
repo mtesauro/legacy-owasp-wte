@@ -1,0 +1,26 @@
+#/bin/sh
+
+echo " "
+echo " "
+echo "   Metasploit Framework 4.3.0 - An Equil Opportunity Exploiter"
+echo "        msfcli - command line interface"
+echo "             (packaged by OWASP WTE)"
+echo " "
+echo "Usage: msfcli <exploit_name> <option=value> [mode]"
+echo "========================================================================="
+echo " "
+echo "    Mode           Description"
+echo "    ----           -----------"
+echo "    (A)dvanced     Show available advanced options for this module"
+echo "    (AC)tions      Show available actions for this auxiliary module"
+echo "    (C)heck        Run the check routine of the selected module"
+echo "    (E)xecute      Execute the selected module"
+echo "    (H)elp         You're looking at it baby!"
+echo "    (I)DS Evasion  Show available ids evasion options for this module"
+echo "    (O)ptions      Show available options for this module"
+echo "    (P)ayloads     Show available payloads for this module"
+echo "    (S)ummary      Show information about this module"
+echo "    (T)argets      Show available targets for this exploit module"
+echo " "
+
+bash

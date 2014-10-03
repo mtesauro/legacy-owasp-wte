@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Register the icons needed for Burpsuite and the OWASP menu
+xdg-icon-resource install --size 64 /tmp/owasp-wte-wireshark/owasp-wte-menu-icon.png owasp-wte-menu-icon
+xdg-icon-resource install --size 64 /tmp/owasp-wte-wireshark/owasp-wte-wireshark-icon.png owasp-wte-wireshark-icon 
+
+# Create the necessary menu entries
+xdg-desktop-menu install /tmp/owasp-wte-wireshark/owasp-owasp.directory \
+                         /tmp/owasp-wte-wireshark/owasp-wte-wireshark.desktop
+
+# Cleanup /tmp
+rm -rf /tmp/owasp-wte-wireshark

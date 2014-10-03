@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="com.paterva.maltego.ui.graph">
+    <module_version install_time="1278609341676" last="true" origin="installer" specification_version="1.0">
+        <file crc="2171842293" name="config/Modules/com-paterva-maltego-ui-graph.xml"/>
+        <file crc="1286033927" name="modules/com-paterva-maltego-ui-graph.jar"/>
+    </module_version>
+</module>

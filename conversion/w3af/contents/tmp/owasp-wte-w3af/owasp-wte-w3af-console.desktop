@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=w3af Console (text-based)
+Exec=launch-w3af-console
+Icon=owasp-wte-w3af-icon
+Categories=Scanners;

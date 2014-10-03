@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Maltego CE (Information Gathering)
+Exec=maltego
+GenericName=Maltego CE
+Icon=owasp-wte-maltego-icon
+Categories=Recon Tools;

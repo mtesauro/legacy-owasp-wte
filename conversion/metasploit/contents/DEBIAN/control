@@ -1,0 +1,12 @@
+Package: owasp-wte-metasploit
+Section: misc
+Priority: 
+Maintainer: Matt Tesauro <matt.tesauro@owasp.org>
+Architecture: i386
+Version: 4.3.0
+Depends: ruby, libopenssl-ruby, libyaml-ruby, libdl-ruby, libiconv-ruby, libreadline-ruby, irb, ri, rubygems, subversion, openjdk-6-jre | sun-java6-jre 
+Description: Metasploit provides useful information to people who perform 
+ penetration testing, IDS signature development, and exploit research. This 
+ project was created to provide information on exploit techniques and to create
+ a useful resource for exploit developers and security professionals. Metasploit 
+ is an open source project managed by Rapid7. 

@@ -1,0 +1,7 @@
+Package: owasp-wte-human-blue-gtk-theme
+Section: misc
+Priority: 
+Maintainer: Matt Tesauro <matt.tesauro@owasp.org>
+Architecture: all
+Version: 1.0
+Description: Blue Human GTK Theme for Gnome

@@ -1,0 +1,23 @@
+		    ****SQLiX Installation Notes*****
+
+   SQLiX is a PERL-based program. It is dependent upon two PERL modules, which, in turn, have their own dependencies.
+   The two PERL modules SQLiX is dependent upon are:
+
+	1) WWW::CheckSite::Spider
+	2) Tie::CharArray
+
+   We, the contributors to the OWASP WTE (and the resulting LiveCD), have attempted to program into the installation, a script that will invoke PERL and install and build the dependent modules.
+   In the event that this fails, we have included here manual installation notes.  Try running SQLiX under the Scanners submenu first and enter "sqlix --help" at the promt to check the install.  If that fails, then try the manual CPAN install steps below.  Its our hope you won't have to do more then close this editor.
+
+
+   1) sudo perl -MCPAN e "shell"
+   Once you come to a command line you can enter text into, as opposed to the initial setup of questions and answers PERL will ask.
+   2) install Archive::Zip
+   3) install Algorithm::Diff
+   4) install Tie::CharArray
+
+   The above modules should install cleanly, or at least, with minimum fuss. However, building WWW:CheckSite::Spider fails more than it succeeds, because of tests it runs on various systems. So, in order to install it without running the tests:
+   5) force install WWW::CheckSite::Spider
+
+Good Luck!
+The OWASP WTE Team

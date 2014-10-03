@@ -1,0 +1,9 @@
+Package: owasp-wte-sqlix
+Section: misc
+Priority: 
+Maintainer: Matt Tesauro <matt.tesauro@owasp.org>
+Architecture: all
+Version: 1.0
+Depends: screen, libnotify-bin
+Description: SQLiX is a SQL Injection scanner.
+ It is able to crawl, detect SQL injection vectors, identify the back-end database and grab function call/UDF results even execute system commands for MS-SQL.

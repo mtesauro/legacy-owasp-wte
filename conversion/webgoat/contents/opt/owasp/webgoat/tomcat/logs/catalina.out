@@ -1,0 +1,32 @@
+Aug 30, 2010 4:04:26 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-sun-1.6.0.20/jre/lib/i386/client:/usr/lib/jvm/java-6-sun-1.6.0.20/jre/lib/i386:/usr/lib/jvm/java-6-sun-1.6.0.20/jre/../lib/i386:/usr/java/packages/lib/i386:/lib:/usr/lib
+Aug 30, 2010 4:04:26 PM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-127.0.0.1-8080
+Aug 30, 2010 4:04:26 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 878 ms
+Aug 30, 2010 4:04:26 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 30, 2010 4:04:26 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.28
+Aug 30, 2010 4:04:26 PM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Aug 30, 2010 4:04:27 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive webgoat.war
+Aug 30, 2010 4:04:28 PM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-127.0.0.1-8080
+Aug 30, 2010 4:04:28 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 30, 2010 4:04:28 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/18  config=null
+Aug 30, 2010 4:04:28 PM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Aug 30, 2010 4:04:28 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2450 ms
+Aug 30, 2010 4:06:57 PM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-127.0.0.1-8080
+Aug 30, 2010 4:06:58 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 30, 2010 4:06:58 PM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-127.0.0.1-8080
+Aug 30, 2010 4:06:59 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime

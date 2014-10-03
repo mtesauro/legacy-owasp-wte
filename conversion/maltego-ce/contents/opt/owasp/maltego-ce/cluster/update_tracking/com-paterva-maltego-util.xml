@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="com.paterva.maltego.util">
+    <module_version install_time="1278609134957" last="true" origin="installer" specification_version="1.0">
+        <file crc="1564828682" name="config/Modules/com-paterva-maltego-util.xml"/>
+        <file crc="1272752656" name="modules/com-paterva-maltego-util.jar"/>
+    </module_version>
+</module>

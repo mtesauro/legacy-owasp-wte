@@ -1,0 +1,20 @@
+ratproxy for Debian
+===================
+
+Limitations:
+------------
+
+The original source of includes flare, a flash decompiler. Unfortunately
+its not available in source, so we cannot ship it. This means that the
+analysis of SWF files by ratproxy will not work by default.
+
+In order to get flare working, you need to download flare, either from
+it website at http://www.nowrap.de/flare.html, or from the original
+source code of ratproxy at http://code.google.com/p/ratproxy/, and then
+put the flare binary in your path; this will allow ratproxy (when the -f
+and -v options are passed) to execute it. Also note that analysis of
+the flare binary shows that it tries to create a temporary file in the
+current directory, so make sure to change to a writable directory before
+running ratproxy.
+
+ -- Iustin Pop <iusty@k1024.org> Wed, 22 Apr 2009 23:34:40 +0200

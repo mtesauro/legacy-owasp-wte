@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Untar the metasploit tarball and make its root be /opt/owasp/metasploit
+cd /opt/owasp/metasploit
+tar -xjf /tmp/owasp-wte-metasploit/framework-4.3.0.tar.bz2
+mv msf3/* ./
+mv msf3/.svn ./
+rm -rf msf3
+
+# Fix some perms that keep msfweb from launching when user isn't root
+# Also breaks the update-msf script without these perms
+chown -R root.adm /opt/owasp/metasploit
+chmod -R g+w /opt/owasp/metasploit

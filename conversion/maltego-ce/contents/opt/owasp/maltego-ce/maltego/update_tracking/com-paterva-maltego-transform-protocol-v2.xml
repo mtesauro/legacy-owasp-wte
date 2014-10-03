@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="com.paterva.maltego.transform.protocol.v2">
+    <module_version install_time="1278609286348" last="true" origin="installer" specification_version="1.0">
+        <file crc="1319214653" name="config/Modules/com-paterva-maltego-transform-protocol-v2.xml"/>
+        <file crc="4041847735" name="modules/com-paterva-maltego-transform-protocol-v2.jar"/>
+    </module_version>
+</module>

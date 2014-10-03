@@ -1,0 +1,26 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+"http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+    <Name>OWASP</Name>
+    <Directory>owasp-owasp.directory</Directory>
+    <Include>
+      <Category>OWASP</Category>
+    </Include>
+    <Menu>
+       <Name>4.7 Business Logic Testing</Name>
+       <Directory>owasp-wte-4-7.directory</Directory>
+       <Include>
+         <Category>Business Logic Testing</Category>
+       </Include>
+    	<Menu>
+       		<Name>4.7 Business Logic Testing (OWASP-BL-001)</Name>
+       		<Directory>owasp-wte-OWASP-BL-001.directory</Directory>
+       		<Include>
+         		<Category>Business Logic Testing</Category>
+       		</Include>
+       	</Menu>
+      </Menu>
+  </Menu>
+</Menu>

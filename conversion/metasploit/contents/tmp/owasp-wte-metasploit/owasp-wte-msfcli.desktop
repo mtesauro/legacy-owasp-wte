@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Metasploit cli
+Exec=launch-msfcli
+Icon=owasp-wte-metasploit-icon
+Categories=Scanners;

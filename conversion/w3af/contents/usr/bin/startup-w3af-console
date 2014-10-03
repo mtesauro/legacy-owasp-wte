@@ -1,0 +1,19 @@
+#/bin/sh
+
+echo " "
+echo " "
+echo "   w3af -Web Application Attack and Audit Framework"
+echo "       w3af-console - interactive w3af console"
+echo "             (part of the OWASP WTE)"
+echo " "
+echo "                       _____        __ "
+echo "             __      _|___ /  __ _ / _|"
+echo '             \ \ /\ / / |_ \ / _` | |_ '
+echo "              \ V  V / ___) | (_| |  _|"
+echo '               \_/\_/ |____/ \__,_|_| '
+echo " "
+echo "  Type 'w3af-console --help' to get help "
+echo "     or get started with 'w3af-console"
+echo " "
+
+bash

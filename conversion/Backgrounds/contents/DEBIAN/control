@@ -1,0 +1,7 @@
+Package: owasp-wte-backgrounds
+Section: misc
+Priority: 
+Maintainer: Matt Tesauro <matt.tesauro@owasp.org>
+Architecture: all
+Version: 1.0
+Description: Backgrounds for OWASP WTE

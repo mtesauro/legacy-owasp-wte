@@ -1,0 +1,26 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+"http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+    <Name>OWASP</Name>
+    <Directory>owasp-owasp.directory</Directory>
+    <Include>
+      <Category>OWASP</Category>
+    </Include>
+    <Menu>
+       <Name>4.3 Configuration Management Testing</Name>
+       <Directory>owasp-wte-4-3.directory</Directory>
+       <Include>
+         <Category>Configuration Management Testing</Category>
+       </Include>
+    	<Menu>
+       		<Name>4.3.4 Application configuration management testing (OWASP-CM-004)</Name>
+       		<Directory>owasp-wte-OWASP-CM-004.directory</Directory>
+       		<Include>
+         		<Category>Application configuration management testing</Category>
+       		</Include>
+       	</Menu>
+      </Menu>
+  </Menu>
+</Menu>

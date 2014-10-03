@@ -1,0 +1,26 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+"http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+    <Name>OWASP</Name>
+    <Directory>owasp-owasp.directory</Directory>
+    <Include>
+      <Category>OWASP</Category>
+    </Include>
+    <Menu>
+       <Name>4.10 Web Services Testing</Name>
+       <Directory>owasp-wte-4-10.directory</Directory>
+       <Include>
+         <Category>Web Services Testing</Category>
+       </Include>
+    	<Menu>
+       		<Name>4.10.5 HTTP GET parameters-REST Testing (OWASP-WS-005)</Name>
+       		<Directory>owasp-wte-OWASP-WS-005.directory</Directory>
+       		<Include>
+         		<Category>HTTP GET parameters-REST Testing</Category>
+       		</Include>
+       	</Menu>
+      </Menu>
+  </Menu>
+</Menu>

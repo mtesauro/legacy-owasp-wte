@@ -1,0 +1,26 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+"http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+    <Name>OWASP</Name>
+    <Directory>owasp-owasp.directory</Directory>
+    <Include>
+      <Category>OWASP</Category>
+    </Include>
+    <Menu>
+       <Name>4.5 Session Management Testing</Name>
+       <Directory>owasp-wte-4-5.directory</Directory>
+       <Include>
+         <Category>Session Management Testing</Category>
+       </Include>
+    	<Menu>
+       		<Name>4.5.5 Testing for CSRF (OWASP-SM-005)</Name>
+       		<Directory>owasp-wte-OWASP-SM-005.directory</Directory>
+       		<Include>
+         		<Category>Testing for CSRF</Category>
+       		</Include>
+       	</Menu>
+      </Menu>
+  </Menu>
+</Menu>

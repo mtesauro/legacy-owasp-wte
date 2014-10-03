@@ -1,0 +1,26 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+"http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+    <Name>OWASP</Name>
+    <Directory>owasp-owasp.directory</Directory>
+    <Include>
+      <Category>OWASP</Category>
+    </Include>
+    <Menu>
+       <Name>4.8 Data Validation Testing</Name>
+       <Directory>owasp-wte-4-8.directory</Directory>
+       <Include>
+         <Category>Data Validation Testing</Category>
+       </Include>
+    	<Menu>
+       		<Name>4.8.4 Testing for Cross Site Flashing (OWASP-DV-004)</Name>
+       		<Directory>owasp-wte-OWASP-DV-004.directory</Directory>
+       		<Include>
+         		<Category>Testing for Cross Site Flashing</Category>
+       		</Include>
+       	</Menu>
+      </Menu>
+  </Menu>
+</Menu>

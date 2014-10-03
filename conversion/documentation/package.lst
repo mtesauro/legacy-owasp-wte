@@ -1,0 +1,49 @@
+webscarab
+- matt: installed, menu and fired up ok
+burpsuite 
+- drew: installed, menu and fired up ok
+cal9000
+- matt: installed, menu and fired up ok
+dirbuster 
+- drew: installed, menu and fired up ok
+fierce 
+- drew: installed, installed deps, menu and fired up ok - walked google
+grendel 
+- matt: installed, installed menu and fired up ok
+- drew: installed, installed menu and fired up ok
+httprint 
+- drew: installed, menu and fired up ok
+jbrofuzz 
+- drew: installed, menu and fired up ok
+netcat 
+- drew: installed, installed deps, menu and fired up ok
+nikto 
+- drew: installed, installed deps, menu and fired up ok
+nmap 
+- drew: installed, installed deps (nmap and zenmap), installed menus, fired up ok
+paros 
+- matt: installed, menus and fired up ok
+- drew: installed, menus and fired up ok
+ratproxy 
+- drew: gave an issue - "cat: 2: No such file"
+- matt: ldd shows it can't find the ssl libraries. Since it was compiled on SLAX, should re-compile on Ubuntu. It wants libcrypto.so.0 and libssl.so.0 but Ubuntu only provides libcrypto.so.0.9.8 and libssl.so.0.9.8.  Could create a symlink but I'd prefer less of a kludge.  HOLD for recompile.
+spikeproxy 
+- drew: installed, menu - brought up firefox page as programmed, however, nothing is answering at http://127.0.0.1:8068
+sqlbrute 
+- drew: installed, installed menu and fired up ok
+sqlix 
+- drew: installed, menu - but when invoked gave error missing WWW/CheckSite - so i couldn't figure out how to install it automaticalloy upon install
+- matt: currently working on this
+sqlmap 
+- drew: installed, menu and fired up ok - but gives normal sqlmap error regarding md5 is deprecated, use hashlib instead....
+tcpdump 
+- drew: installed, installed deps (tcpdump), installed menus, fired up ok
+w3af 
+- drew: installed, deps, menu - but I messed up the /usr/bin/startup-w3af script and /usr/share/applications/owasp-wte-w3af.desktop file
+- matt: add startup-w3af_console and upated the owasp-wte-w3af.desktop file.  However, on my default 9.04, I get a "Depends w3af but it is not installable" and w3af isn't listed in Synaptic, apt-cache search, etc.  Where'd you find that .deb for w3af?
+wapiti 
+- drew: installed, menu and fired up ok
+wsfuzzer 
+- drew: installed, menu and gives some python error regarding modules
+
+#### I believe everything uninstalled ok - KUDOS, MATT!!!

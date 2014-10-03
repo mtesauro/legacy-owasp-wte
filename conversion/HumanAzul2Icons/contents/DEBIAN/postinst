@@ -1,0 +1,4 @@
+#!/bin/bash
+#
+## Set HumanAzul2 as Icon Theme
+gconftool-2 --set --type string /desktop/gnome/interface/icon_theme "HumanAzul2"

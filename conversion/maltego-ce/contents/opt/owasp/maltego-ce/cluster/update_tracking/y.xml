@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="y">
+    <module_version install_time="1278609152004" last="true" origin="installer" specification_version="1.0">
+        <file crc="2734148793" name="config/Modules/y.xml"/>
+        <file crc="291764337" name="modules/ext/y.jar"/>
+        <file crc="3637260442" name="modules/y.jar"/>
+    </module_version>
+</module>

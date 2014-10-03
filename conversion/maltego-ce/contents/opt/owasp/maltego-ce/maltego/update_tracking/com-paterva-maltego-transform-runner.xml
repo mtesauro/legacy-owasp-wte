@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="com.paterva.maltego.transform.runner">
+    <module_version install_time="1278609382379" last="true" origin="installer" specification_version="1.0">
+        <file crc="3546066756" name="config/Modules/com-paterva-maltego-transform-runner.xml"/>
+        <file crc="2335330344" name="modules/com-paterva-maltego-transform-runner.jar"/>
+    </module_version>
+</module>

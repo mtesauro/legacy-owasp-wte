@@ -1,0 +1,14 @@
+Conversion to Ubuntu - Running notes:
+
+Thu Sep 24 10:43:15 CDT 2009
+====
+Installed xpm2wico to convert icons to Windows friendly icons
+
+* Need to work on making the Java handling a bit more robust (e.g. WebScarab script)
+  ** Look at Orizon launching script for an example
+
+You need squashfs-tools to extract .lzms
+
+
+
+

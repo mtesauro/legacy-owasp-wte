@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd /opt/owasp/wapiti/src
+python ./wapiti.py "$@"
+

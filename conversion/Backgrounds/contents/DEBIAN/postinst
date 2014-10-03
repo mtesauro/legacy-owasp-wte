@@ -1,0 +1,4 @@
+#!/bin/bash
+
+## Set Human-Blue as GTK Theme
+gconftool-2 --set --type string /desktop/gnome/background/picture_filename "/usr/share/backgrounds/OWASP-WTE-Desktop-Background.png"

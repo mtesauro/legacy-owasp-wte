@@ -1,0 +1,26 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+"http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+    <Name>OWASP</Name>
+    <Directory>owasp-owasp.directory</Directory>
+    <Include>
+      <Category>OWASP</Category>
+    </Include>
+    <Menu>
+       <Name>4.2 Information Gathering</Name>
+       <Directory>owasp-wte-4-2.directory</Directory>
+       <Include>
+         <Category>Information Gathering</Category>
+       </Include>
+    	<Menu>
+       		<Name>4.2.1 Spiders, robots, and Crawlers (OWASP-IG-001)</Name>
+       		<Directory>owasp-wte-OWASP-IG-001.directory</Directory>
+       		<Include>
+         		<Category>Spiders, robots, and Crawlers</Category>
+       		</Include>
+       	</Menu>
+      </Menu>
+  </Menu>
+</Menu>

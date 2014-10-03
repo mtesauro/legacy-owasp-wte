@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=SQLiX (SQL Injection Scanner)
+Exec=gnome-terminal -x bash -c "startup-sqlix; bash"
+Icon=owasp-wte-sqlix-icon
+Categories=Scanners;

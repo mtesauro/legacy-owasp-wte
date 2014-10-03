@@ -1,0 +1,15 @@
+Package: owasp-wte-cloud
+Section: misc
+Priority: 
+Maintainer: Matt Tesauro <matt.tesauro@owasp.org>
+Architecture: all
+Version: 1.0
+Depends: owasp-wte-burpsuite, owasp-wte-cal9000, owasp-wte-doc, owasp-wte-ende, 
+ owasp-wte-fierce, owasp-wte-grendel-scan, owasp-wte-httprint, 
+ owasp-wte-jbrofuzz, owasp-wte-maltego, owasp-wte-metasploit, owasp-wte-netcat, 
+ owasp-wte-nikto, owasp-wte-nmap, owasp-wte-paros, owasp-wte-ratproxy, 
+ owasp-wte-spikeproxy, owasp-wte-sqlbrute, owasp-wte-tcpdump, owasp-wte-w3af, 
+ owasp-wte-wapiti, owasp-wte-webgoat, owasp-wte-webscarab, owasp-wte-wireshark,
+ owasp-wte-wsfuzzer, owasp-wte-zap
+Description: This is a meta package which includes everything needed to 
+ install OWASP WTE into a cloud provider host.

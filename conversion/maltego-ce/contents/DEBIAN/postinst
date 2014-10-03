@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Register the icons needed for Maltego CE and the OWASP menu
+xdg-icon-resource install --size 64 /tmp/owasp-wte-maltego/owasp-wte-menu-icon.png owasp-wte-menu-icon
+xdg-icon-resource install --size 64 /tmp/owasp-wte-maltego/owasp-wte-maltego-icon.png owasp-wte-maltego-icon 
+
+# Create the necessary menu entries
+xdg-desktop-menu install /tmp/owasp-wte-maltego/owasp-owasp.directory \
+                         /tmp/owasp-wte-maltego/owasp-recon.directory \
+                         /tmp/owasp-wte-maltego/owasp-wte-maltego.desktop
+
+# Cleanup /tmp
+rm -rf /tmp/owasp-wte-maltego

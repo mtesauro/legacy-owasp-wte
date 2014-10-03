@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="com.paterva.maltego.view.dynamic">
+    <module_version install_time="1278609360004" last="true" origin="installer" specification_version="1.0">
+        <file crc="1774132862" name="config/Modules/com-paterva-maltego-view-dynamic.xml"/>
+        <file crc="2822587875" name="modules/com-paterva-maltego-view-dynamic.jar"/>
+    </module_version>
+</module>

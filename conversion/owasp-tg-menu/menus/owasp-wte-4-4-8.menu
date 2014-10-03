@@ -1,0 +1,26 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+"http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+    <Name>OWASP</Name>
+    <Directory>owasp-owasp.directory</Directory>
+    <Include>
+      <Category>OWASP</Category>
+    </Include>
+    <Menu>
+       <Name>4.4 Authentication Testing</Name>
+       <Directory>owasp-wte-4-4.directory</Directory>
+       <Include>
+         <Category>Authentication Testing</Category>
+       </Include>
+    	<Menu>
+       		<Name>4.4.8 Testing for Captcha (OWASP-AT-008)</Name>
+       		<Directory>owasp-wte-OWASP-AT-008.directory</Directory>
+       		<Include>
+         		<Category>Testing for Captcha</Category>
+       		</Include>
+       	</Menu>
+      </Menu>
+  </Menu>
+</Menu>

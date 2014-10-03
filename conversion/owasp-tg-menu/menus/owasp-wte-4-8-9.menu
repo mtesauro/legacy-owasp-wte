@@ -1,0 +1,26 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+"http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+    <Name>OWASP</Name>
+    <Directory>owasp-owasp.directory</Directory>
+    <Include>
+      <Category>OWASP</Category>
+    </Include>
+    <Menu>
+       <Name>4.8.9 SSI Injection</Name>
+       <Directory>owasp-wte-4-8-9.directory</Directory>
+       <Include>
+         <Category>SSI Injection</Category>
+       </Include>
+    	<Menu>
+       		<Name>4.8.9 SSI Injection (OWASP-DV-009)</Name>
+       		<Directory>owasp-wte-OWASP-DV-009.directory</Directory>
+       		<Include>
+         		<Category>SSI Injection</Category>
+       		</Include>
+       	</Menu>
+      </Menu>
+  </Menu>
+</Menu>

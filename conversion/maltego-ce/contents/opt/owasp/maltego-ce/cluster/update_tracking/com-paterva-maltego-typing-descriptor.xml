@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="com.paterva.maltego.typing.descriptor">
+    <module_version install_time="1278609143738" last="true" origin="installer" specification_version="1.0">
+        <file crc="3263165517" name="config/Modules/com-paterva-maltego-typing-descriptor.xml"/>
+        <file crc="2203655023" name="modules/com-paterva-maltego-typing-descriptor.jar"/>
+    </module_version>
+</module>

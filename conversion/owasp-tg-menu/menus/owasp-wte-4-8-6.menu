@@ -1,0 +1,26 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+"http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+    <Name>OWASP</Name>
+    <Directory>owasp-owasp.directory</Directory>
+    <Include>
+      <Category>OWASP</Category>
+    </Include>
+    <Menu>
+       <Name>4.8.6 LDAP Injection</Name>
+       <Directory>owasp-wte-4-8-6.directory</Directory>
+       <Include>
+         <Category>LDAP Injection</Category>
+       </Include>
+    	<Menu>
+       		<Name>4.8.6 LDAP Injection (OWASP-DV-006)</Name>
+       		<Directory>owasp-wte-OWASP-DV-006.directory</Directory>
+       		<Include>
+         		<Category>LDAP Injection</Category>
+       		</Include>
+       	</Menu>
+      </Menu>
+  </Menu>
+</Menu>

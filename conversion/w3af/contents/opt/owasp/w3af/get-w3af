@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Install any lingering w3af prerequisites
+easy_install pybloomfiltermmap
+
+# Untar the w3af tarball and make its root be /opt/owasp/w3af
+cd /opt/owasp/w3af
+tar -xjf /tmp/owasp-wte-w3af/w3af-svn.tar.bz
+mv w3af-svn/* ./
+mv w3af-svn/.svn ./
+rm -rf w3af-svn
+
+# Fix some perms that may keep w3af from launching when user isn't root
+# Also breaks the update-w3af script without these perms
+chown -R root.adm /opt/owasp/w3af
+chmod -R g+w /opt/owasp/w3af

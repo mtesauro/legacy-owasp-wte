@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="com.paterva.maltego.util.ui">
+    <module_version install_time="1278609273113" last="true" origin="installer" specification_version="1.0">
+        <file crc="4025920370" name="config/Modules/com-paterva-maltego-util-ui.xml"/>
+        <file crc="571855171" name="modules/com-paterva-maltego-util-ui.jar"/>
+    </module_version>
+</module>

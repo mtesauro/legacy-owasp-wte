@@ -1,0 +1,23 @@
+burpsuite - done  -> dep on Java
+cal9000 - done -> no deps  
+dirbuster - done  -> dep on Java
+fierce - done -> dep on Perl & several Perl modules
+grendel-scan - done -> dep on Java
+httprint - done -> no deps 
+jbrofuzz - done -> dep on Java
+livecd-documentation - needs relocation + multi-user awareness -> no deps
+maltego - done -> dep on Java
+netcats - consider replacing with .deb package from official repos
+nikto - done -> dep on Perl + 1 Perl module
+paros - done -> dep on Java
+ratproxy - done -> no deps 
+spikeproxy - consider replacing this with the .deb package & creating a new add-on package for our tweaks
+sqlbrute - done -> dep on Python and several Python modules
+sqlix - done -> dep on Perl and several Perl modules
+sqlmap - done & look for an existing .deb package -> dep on Python and several modules
+wapiti - done -> dep on Python and a bunch of modules
+webgoat - done -> dep on Java  (looks like 1.6 is OK for WebGoat) 
+webscarab - very done ;)
+wsfuzzer - done -> dep on Java 1.6.X , Python 2.5/2.6+ and PyXML
+
+Look at/for w3af and Metasploit .debs

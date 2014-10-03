@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=Application;Network;
+Comment=
+Encoding=UTF-8
+Exec[$e]=startup-sqlix; bash
+GenericName=SQLiX
+Icon=/usr/share/pixmaps/sqlix-icon.png
+MimeType=text/html
+Name=SQL Injection Scanner
+Path[$e]=
+StartupNotify=false
+Terminal=1
+TerminalOptions=-T "SQLiX - SQL Injection Scanner"
+Type=Application
+X-KDE-StartupNotify=true
+X-KDE-SubstituteUID=false
+X-KDE-Username=

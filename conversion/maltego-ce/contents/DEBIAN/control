@@ -1,0 +1,13 @@
+Package: owasp-wte-maltego
+Section: misc
+Priority: 
+Maintainer: Matt Tesauro <matt.tesauro@owasp.org>
+Architecture: all
+Version: 3.0
+Depends: default-jre | sun-java6-jre | openjdk-6-jre
+Description: Maltego is an open source intelligence and forensics application.
+ It will offer you timous mining and gathering of information as well as the 
+ representation of this information in a easy to understand format. Coupled 
+ with its graphing libraries, Maltego allows you to identify key relationships 
+ between information and identify previously unknown relationships between 
+ them.

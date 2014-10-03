@@ -1,0 +1,16 @@
+#/bin/sh
+
+echo " "
+echo " "
+echo "      OWASP SQLiX - SQL Injection Scanner"
+echo "        (part of the OWASP WTE)"Š
+echo " "
+echo "======================================================"
+echo "‡                   -- SQLiX --"
+echo "  © Copyright 2006 Cedric COCHIN, All Rights Reserved."
+echo "======================================================"
+echo " "
+echo "  ** Type 'sqlix --help' for command-line options  **"
+echo " "
+echo "** Maximize the window to aid reading the help output **"
+echo " "

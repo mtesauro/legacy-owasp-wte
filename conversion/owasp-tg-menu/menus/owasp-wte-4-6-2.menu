@@ -1,0 +1,26 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+"http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+    <Name>OWASP</Name>
+    <Directory>owasp-owasp.directory</Directory>
+    <Include>
+      <Category>OWASP</Category>
+    </Include>
+    <Menu>
+       <Name>4.6 Authorization Testing</Name>
+       <Directory>owasp-wte-4-6.directory</Directory>
+       <Include>
+         <Category>Authorization Testing</Category>
+       </Include>
+    	<Menu>
+       		<Name>4.6.2 Testing for bypassing authorization schema (OWASP-AZ-002)</Name>
+       		<Directory>owasp-wte-OWASP-AZ-002.directory</Directory>
+       		<Include>
+         		<Category>Testing for bypassing authorization schema</Category>
+       		</Include>
+       	</Menu>
+      </Menu>
+  </Menu>
+</Menu>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="com.paterva.maltego.entity.api">
+    <module_version install_time="1278609162019" last="true" origin="installer" specification_version="1.0">
+        <file crc="3549960664" name="config/Modules/com-paterva-maltego-entity-api.xml"/>
+        <file crc="1066156193" name="modules/com-paterva-maltego-entity-api.jar"/>
+    </module_version>
+</module>

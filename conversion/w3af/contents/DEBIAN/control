@@ -1,0 +1,11 @@
+Package: owasp-wte-w3af
+Section: misc
+Priority: 
+Maintainer: Matt Tesauro <matt.tesauro@owasp.org>
+Architecture: all
+Version: 5824svn 
+Depends: graphviz, python (>=2.6), python-gtk2 (>=2.12), python-support, python-beautifulsoup, python-openssl, python-pypdf, python-pysqlite2, python-soappy, python-nltk, python-lxml, python-scapy, python-svn, python-setuptools, python-gtksourceview2, python-webkit
+Conflicts: w3af, w3af-console
+Description: w3af is a Web Application Attack and Audit Framework. The project's
+ goal is to create a framework to find and exploit web application 
+ vulnerabilities that is easy to use and extend.

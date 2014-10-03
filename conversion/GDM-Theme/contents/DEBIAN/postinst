@@ -1,0 +1,13 @@
+#!/bin/bash
+
+## Set Blue as GDM Theme
+sudo cp /etc/gdm/gdm.conf-custom /etc/gdm/gdm.conf-custom.org
+cat /etc/gdm/gdm.conf-custom | grep -v "Graphical" > /tmp/owasp-wte_gdm.conf-custom
+
+echo "GraphicalTheme=OWASP-UbuntuHarmoniousBlue" >> /tmp/owasp-wte_gdm.conf-custom
+
+sudo cp /tmp/owasp-wte_gdm.conf-custom /etc/gdm/gdm.conf-custom
+
+#sudo gdmflexiserver --command="UPDATE_CONFIG GraphicalTheme"
+
+rm /tmp/owasp-wte_gdm.conf-custom

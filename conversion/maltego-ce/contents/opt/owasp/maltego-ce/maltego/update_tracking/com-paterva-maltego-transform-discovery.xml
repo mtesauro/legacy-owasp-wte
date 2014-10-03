@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="com.paterva.maltego.transform.discovery">
+    <module_version install_time="1278609253285" last="true" origin="installer" specification_version="1.0">
+        <file crc="4201787225" name="config/Modules/com-paterva-maltego-transform-discovery.xml"/>
+        <file crc="1915885293" name="modules/com-paterva-maltego-transform-discovery.jar"/>
+    </module_version>
+</module>

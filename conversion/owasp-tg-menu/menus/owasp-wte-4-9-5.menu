@@ -1,0 +1,26 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+"http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+    <Name>OWASP</Name>
+    <Directory>owasp-owasp.directory</Directory>
+    <Include>
+      <Category>OWASP</Category>
+    </Include>
+    <Menu>
+       <Name>4.9 Denial of Service Testing</Name>
+       <Directory>owasp-wte-4-9.directory</Directory>
+       <Include>
+         <Category>Denial of Service Testing</Category>
+       </Include>
+    	<Menu>
+       		<Name>4.9.5 User Input as a Loop Counter (OWASP-DS-005)</Name>
+       		<Directory>owasp-wte-OWASP-DS-005.directory</Directory>
+       		<Include>
+         		<Category>User Input as a Loop Counter</Category>
+       		</Include>
+       	</Menu>
+      </Menu>
+  </Menu>
+</Menu>

@@ -1,0 +1,2 @@
+License: GPL
+URL: http://gnome-look.org/content/show.php/Ubuntu+Harmonious+Blue+GDM?content=41450

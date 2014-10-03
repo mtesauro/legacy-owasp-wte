@@ -1,0 +1,8 @@
+[GdmGreeterTheme]
+Encoding=UTF-8
+Greeter=OWASP-UbuntuBlue.xml
+Name=OWASP Ubuntu Harmonious Blue
+Description=Cos Blue Is Better Than Brown :P
+Author=Drew Beebe, based on Ubuntu Harmonious Blue by Luke Middlewick
+Copyright=(c) 2006 Luke Middlewick.
+Screenshot=screenshot.png

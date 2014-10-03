@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Register the icons needed for wpscan and the OWASP menu
+xdg-icon-resource install --size 64 /tmp/owasp-wte-wpscan/owasp-wte-menu-icon.png owasp-wte-menu-icon
+xdg-icon-resource install --size 64 /tmp/owasp-wte-wpscan/owasp-wte-wpscan-icon.png owasp-wte-wpscan-icon 
+
+# Create the necessary menu entries
+# wpscan-gui
+xdg-desktop-menu install /tmp/owasp-wte-wpscan/owasp-owasp.directory \
+                         /tmp/owasp-wte-wpscan/owasp-scanners.directory \
+                         /tmp/owasp-wte-wpscan/owasp-wte-wpscan.desktop
+
+# Add the necessary Ruby gems
+gem install typhoeus xml-simple
+
+# Cleanup /tmp
+rm -rf /tmp/owasp-wte-wpscan

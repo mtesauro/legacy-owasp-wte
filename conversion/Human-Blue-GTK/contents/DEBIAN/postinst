@@ -1,0 +1,7 @@
+#!/bin/bash
+
+## Set Human-Blue as GTK Theme
+gconftool-2 --set --type string /desktop/gnome/interface/gtk_theme "Human-Blue"
+
+## Set Clearlooks as Window Border for optimal prettiness
+gconftool-2 --set --type string /apps/metacity/general/theme "Clearlooks"

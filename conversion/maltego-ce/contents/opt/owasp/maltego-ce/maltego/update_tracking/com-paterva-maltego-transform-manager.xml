@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="com.paterva.maltego.transform.manager">
+    <module_version install_time="1278609374613" last="true" origin="installer" specification_version="1.0">
+        <file crc="2576664266" name="config/Modules/com-paterva-maltego-transform-manager.xml"/>
+        <file crc="3125911409" name="modules/com-paterva-maltego-transform-manager.jar"/>
+    </module_version>
+</module>

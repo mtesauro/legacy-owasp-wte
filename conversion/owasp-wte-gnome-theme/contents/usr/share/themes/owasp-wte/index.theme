@@ -1,0 +1,7 @@
+[X-GNOME-Metatheme]
+Name=OWASP-WTE
+Encoding=UTF-8
+GtkTheme=Human-Blue
+MetacityTheme=Clearlooks
+IconTheme=HumanAzul2
+BackgroundImage=/usr/share/backgrounds/OWASP-WTE-Desktop-Background.png

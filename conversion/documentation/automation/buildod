@@ -1,0 +1,23 @@
+#!/bin/bash
+
+DEBDIR="/home/fleec3/testbuild"
+
+# Set the name of this package
+NAME=`cat ./DEBIAN/control | grep -i "Package: " | cut -f2 -d" "`;
+
+# Set the version for this package
+VERSION=`cat ./DEBIAN/control | grep -i "Version: " | cut -f2 -d" "`;
+
+# Set the architecture  for this package
+ARCH=`cat ./DEBIAN/control | grep -i "Architecture: " | cut -f2 -d" "`;
+
+# Set the minor number
+if [ -s $1 ]
+then
+    MINOR=1
+else
+    MINOR=$1
+fi
+
+# Build the package according to the above
+dpkg --build . $DEBDIR/$NAME-$VERSION-"$MINOR"_$ARCH.deb

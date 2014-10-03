@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Armitage
+Exec=armitage
+Icon=owasp-wte-metasploit-icon
+Categories=Scanners;

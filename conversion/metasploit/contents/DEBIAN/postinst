@@ -1,0 +1,25 @@
+#!/bin/sh
+
+### Run special install from tarball script
+/opt/owasp/metasploit/get-metasploit
+
+# Register the icons needed for Metasploit and the OWASP menu
+xdg-icon-resource install --size 64 /tmp/owasp-wte-metasploit/owasp-wte-menu-icon.png owasp-wte-menu-icon
+xdg-icon-resource install --size 64 /tmp/owasp-wte-metasploit/owasp-wte-metasploit-icon.png owasp-wte-metasploit-icon 
+
+# Create the necessary menu entries
+# msfcli
+xdg-desktop-menu install /tmp/owasp-wte-metasploit/owasp-owasp.directory \
+                         /tmp/owasp-wte-metasploit/owasp-scanners.directory \
+                         /tmp/owasp-wte-metasploit/owasp-wte-msfcli.desktop
+# msfconsole
+xdg-desktop-menu install /tmp/owasp-wte-metasploit/owasp-owasp.directory \
+                         /tmp/owasp-wte-metasploit/owasp-scanners.directory \
+                         /tmp/owasp-wte-metasploit/owasp-wte-msfconsole.desktop
+# armitage
+xdg-desktop-menu install /tmp/owasp-wte-metasploit/owasp-owasp.directory \
+                         /tmp/owasp-wte-metasploit/owasp-scanners.directory \
+                         /tmp/owasp-wte-metasploit/owasp-wte-armitage.desktop
+
+# Cleanup /tmp
+rm -rf /tmp/owasp-wte-metasploit

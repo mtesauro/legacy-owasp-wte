@@ -1,0 +1,26 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+"http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+    <Name>OWASP</Name>
+    <Directory>owasp-owasp.directory</Directory>
+    <Include>
+      <Category>OWASP</Category>
+    </Include>
+    <Menu>
+       <Name>4.11 AJAX Testing</Name>
+       <Directory>owasp-wte-4-11.directory</Directory>
+       <Include>
+         <Category>AJAX Testing</Category>
+       </Include>
+    	<Menu>
+       		<Name>4.11.2 Testing For AJAX (OWASP-AJ-002)</Name>
+       		<Directory>owasp-wte-OWASP-AJ-002.directory</Directory>
+       		<Include>
+         		<Category>Testing For AJAX</Category>
+       		</Include>
+       	</Menu>
+      </Menu>
+  </Menu>
+</Menu>

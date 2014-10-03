@@ -1,0 +1,6 @@
+
+Welcome to the archive of the legacy code base for OWASP WTE.
+
+Please use this only for reference purposes.  Development on OWASP WTE will occur in a different repository.
+
+

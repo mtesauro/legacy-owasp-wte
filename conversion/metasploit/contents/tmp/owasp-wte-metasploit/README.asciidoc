@@ -1,0 +1,8 @@
+Note: The file framework-4.3.0.tar.bz2 has been broken up into three separate file using split.
+
+The files are framework-4.3.0.tar.bz2-x00, framework-4.3.0.tar.bz2-x01 and framework-4.3.0.tar.bz2-x02
+
+Joining those files together into a single file will restore this directory back to its original condition.
+
+The file was split to get around the 100MB max file size imposed by GitHub.com.
+

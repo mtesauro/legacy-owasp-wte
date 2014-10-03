@@ -1,0 +1,74 @@
+Script started on Wed 07 Oct 2009 01:24:01 PM CDT
+$ cp ../old-lzm-files/webscarab-20090122.lzm ./
+$ mkdir webscarab-deb
+$ unsquashfs -f -dest webscarab-deb webscarab-20090122.lzm
+created 27 files
+created 13 directories
+created 0 symlinks
+created 0 devices
+created 0 fifos
+$ rm *.lzm
+$ cd webscarab-deb/
+$ find ./ | less
+$ mkdir -p ./etc/skel
+$ mv root/WebScarab.properties ./etc/skel/
+$ rm -rf root
+$ find ./ | less
+$ mkdir -p usr/share/man/man1
+$ vi webscarab.1
+
+$ cp webscarab.1 webscarab.1.cya
+$ groff -Tascii -man webscarab.1 webscarab.1 
+$ cat << EOF | gzip -9 > usr/share/doc/webscarab/changelog.Debian.gz
+> WebScarab (2009-0122-1) unstable; urgency=low
+> 
+>  * The release for Juicy Jackfruit 9.10
+> 
+> -- Matt Tesauro <matt.tesauro@owasp.org> Wed, 07 Oct 2009 15:14:56 -0500
+> EOF
+$ chmod -R og=rX .
+$ find . -exec ls -Fld {} \;
+$ ls
+$ mv webscarab.1* ../
+$ mkdir DEBIAN
+$ cat <<EOF> DEBIAN/control
+> Package: webscarab
+> Section: misc
+> Priority: extra
+> Maintainer: Matt Tesauro <matt.tesauro@owasp.org>
+> Architecture: all
+> Version: 20090122-1
+> Description: Local proxy for web application testing
+>  WebScarab is a framework for analysing applications that communicate using the
+>  HTTP and HTTPS protocols. It is written in Java, and is thus portable to many 
+>  platforms. WebScarab has several modes of operation, implemented by a number of
+>  plugins. In its most common usage, WebScarab operates as an intercepting proxy,
+>  allowing the operator to review and modify requests created by the browser 
+>  before they are sent to the server, and to review and modify responses returned
+>  from the server before they are received by the browser. WebScarab is able to 
+>  intercept both HTTP and HTTPS communication. The operator can also review the 
+>  conversations (requests and responses) that have passed through WebScarab.
+> EOF
+$ find usr -type f -exec md5sum {} \ ; > DEBIAN/md5sums
+$ ls usr/
+$ mkdir usr/bin
+$ vi usr/bin/webscarab 
+$ chmod a+x usr/bin/webscarab 
+$ find usr -type f -exec md5sum {} \;; > DEBIAN/md5sums
+$ cd ..
+$ tar -cz -C webscarab-deb/DEBIAN/ -f control.tar.gz .
+$ tar -cz --exclude=DEBIAN -C webscarab-deb/ -f data.tar.gz .
+$ ls webscarab-deb/
+$ ls
+$ mkdir webscarab-deb/binary
+$ mv control.tar.gz webscarab-deb/binary/
+$ mv data.tar.gz webscarab-deb/binary/
+$ cd webscarab-deb/binary/
+$ echo 2.0 > debian-binary
+$ ar rcu webscarab-beta.deb debian-binary control.tar.gz data.tar.gz 
+$ dpkg-deb --info webscarab-beta.deb 
+$ dpkg-deb --contents webscarab-beta.deb 
+$ sudo dpkg --install webscarab-beta.deb
+exit
+
+Script done on Wed 07 Oct 2009 03:37:11 PM CDT

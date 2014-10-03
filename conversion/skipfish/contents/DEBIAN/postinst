@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Register the icons needed for skipfish and the OWASP menu
+xdg-icon-resource install --size 64 /tmp/owasp-wte-skipfish/owasp-wte-menu-icon.png owasp-wte-menu-icon
+xdg-icon-resource install --size 64 /tmp/owasp-wte-skipfish/owasp-wte-skipfish-icon.png owasp-wte-skipfish-icon 
+
+# Create the necessary menu entries
+xdg-desktop-menu install /tmp/owasp-wte-skipfish/owasp-owasp.directory \
+                         /tmp/owasp-wte-skipfish/owasp-scanners.directory \
+                         /tmp/owasp-wte-skipfish/owasp-wte-skipfish.desktop
+
+# Cleanup /tmp
+rm -rf /tmp/owasp-wte-skipfish

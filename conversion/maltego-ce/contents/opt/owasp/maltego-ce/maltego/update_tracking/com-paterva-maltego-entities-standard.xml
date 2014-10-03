@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="com.paterva.maltego.entities.standard">
+    <module_version install_time="1278609205723" last="true" origin="installer" specification_version="1.0">
+        <file crc="3645653261" name="config/Modules/com-paterva-maltego-entities-standard.xml"/>
+        <file crc="3639398054" name="modules/com-paterva-maltego-entities-standard.jar"/>
+    </module_version>
+</module>
